@@ -12,7 +12,7 @@ Podcast production is 20% recording and 80% everything else: research, outlines,
 
 ## The Solution
 
-Clawdbot handles the pipeline: researches topics, creates outlines, generates show notes, transcribes episodes, creates social clips, and drafts promotion. You focus on the conversation.
+OpenClaw handles the pipeline: researches topics, creates outlines, generates show notes, transcribes episodes, creates social clips, and drafts promotion. You focus on the conversation.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot handles the pipeline: researches topics, creates outlines, generates sh
 ### Step 1: Install Production Skills
 
 ```bash
-clawdbot skill install local-whisper  # Transcription
-clawdbot skill install youtube-summarizer
-clawdbot skill install voice-transcribe
-clawdbot skill install video-subtitles
+openclaw skill install local-whisper  # Transcription
+openclaw skill install youtube-summarizer
+openclaw skill install voice-transcribe
+openclaw skill install video-subtitles
 ```
 
 ### Step 2: Set Up Episode Template
 
-Create `~/clawd/podcast/episode-template.md`:
+Create `~/openclaw/podcast/episode-template.md`:
 
 ```markdown
 # Episode {number}: {title}
@@ -59,7 +59,7 @@ Create `~/clawd/podcast/episode-template.md`:
 
 ### Step 3: Configure Show Details
 
-Create `~/clawd/podcast/show.json`:
+Create `~/openclaw/podcast/show.json`:
 
 ```json
 {

@@ -12,7 +12,7 @@ Documents pile up: contracts, reports, receipts, research papers. Finding inform
 
 ## The Solution
 
-Clawdbot extracts text from any document, summarizes key points, makes everything searchable, and answers questions about your documents instantly.
+OpenClaw extracts text from any document, summarizes key points, makes everything searchable, and answers questions about your documents instantly.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot extracts text from any document, summarizes key points, makes everythin
 ### Step 1: Install Document Skills
 
 ```bash
-clawdbot skill install mineru-pdf
-clawdbot skill install pymupdf-pdf
-clawdbot skill install llmwhisperer
-clawdbot skill install excel
+openclaw skill install mineru-pdf
+openclaw skill install pymupdf-pdf
+openclaw skill install llmwhisperer
+openclaw skill install excel
 ```
 
 ### Step 2: Set Up Document Folders
 
-Create `~/clawd/documents/config.json`:
+Create `~/openclaw/documents/config.json`:
 
 ```json
 {
@@ -38,7 +38,7 @@ Create `~/clawd/documents/config.json`:
     "~/Documents/Reports/",
     "~/Downloads/*.pdf"
   ],
-  "outputDir": "~/clawd/documents/processed/",
+  "outputDir": "~/openclaw/documents/processed/",
   "autoProcess": true
 }
 ```

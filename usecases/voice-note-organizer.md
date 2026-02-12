@@ -12,7 +12,7 @@ Voice notes are the fastest way to capture ideas, but they become a graveyard of
 
 ## The Solution
 
-Clawdbot automatically transcribes your voice notes, extracts key points, tags by topic, and makes everything searchable. Ideas captured on a walk become organized notes by the time you're home.
+OpenClaw automatically transcribes your voice notes, extracts key points, tags by topic, and makes everything searchable. Ideas captured on a walk become organized notes by the time you're home.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot automatically transcribes your voice notes, extracts key points, tags b
 ### Step 1: Install Transcription Skills
 
 ```bash
-clawdbot skill install voicenotes
-clawdbot skill install local-whisper
-clawdbot skill install voice-transcribe
+openclaw skill install voicenotes
+openclaw skill install local-whisper
+openclaw skill install voice-transcribe
 ```
 
 ### Step 2: Set Up Voice Note Sync
 
-Create `~/clawd/voice-notes/config.json`:
+Create `~/openclaw/voice-notes/config.json`:
 
 ```json
 {
@@ -36,7 +36,7 @@ Create `~/clawd/voice-notes/config.json`:
     "~/Library/Mobile Documents/com~apple~CloudDocs/VoiceNotes/",
     "~/Dropbox/VoiceMemos/"
   ],
-  "outputDir": "~/clawd/voice-notes/transcripts/",
+  "outputDir": "~/openclaw/voice-notes/transcripts/",
   "autoTags": ["idea", "todo", "meeting", "journal", "reminder"],
   "language": "en"
 }
@@ -44,7 +44,7 @@ Create `~/clawd/voice-notes/config.json`:
 
 ### Step 3: Configure Processing Rules
 
-Create `~/clawd/voice-notes/rules.md`:
+Create `~/openclaw/voice-notes/rules.md`:
 
 ```markdown
 # Voice Note Processing

@@ -12,7 +12,7 @@ Mental health is invisible until it's not. You feel "off" but can't explain why.
 
 ## The Solution
 
-Clawdbot provides gentle daily check-ins, logs moods without judgment, helps you prepare for therapy sessions with actual data, and identifies patterns before they become problems.
+OpenClaw provides gentle daily check-ins, logs moods without judgment, helps you prepare for therapy sessions with actual data, and identifies patterns before they become problems.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot provides gentle daily check-ins, logs moods without judgment, helps you
 ### Step 1: Install Mindfulness & Journaling Skills
 
 ```bash
-clawdbot skill install obsidian-conversation-backup  # or notion
-clawdbot skill install remind-me
-clawdbot skill install calendar
+openclaw skill install obsidian-conversation-backup  # or notion
+openclaw skill install remind-me
+openclaw skill install calendar
 ```
 
 ### Step 2: Configure Check-In Profile
 
-Create `~/clawd/mentalhealth/config.json`:
+Create `~/openclaw/mentalhealth/config.json`:
 
 ```json
 {
@@ -49,13 +49,13 @@ Create `~/clawd/mentalhealth/config.json`:
     "anxietyThreshold": 7,
     "isolationDays": 2
   },
-  "storage": "~/clawd/mentalhealth/entries/"
+  "storage": "~/openclaw/mentalhealth/entries/"
 }
 ```
 
 ### Step 3: Set Up Check-In Questions
 
-Create `~/clawd/mentalhealth/questions.md`:
+Create `~/openclaw/mentalhealth/questions.md`:
 
 ```markdown
 # Morning Check-In (2 min)
@@ -86,7 +86,7 @@ Create `~/clawd/mentalhealth/questions.md`:
 
 ### Step 4: Create Entry Template
 
-Create `~/clawd/mentalhealth/template.json`:
+Create `~/openclaw/mentalhealth/template.json`:
 
 ```json
 {

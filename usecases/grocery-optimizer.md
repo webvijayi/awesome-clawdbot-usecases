@@ -12,7 +12,7 @@ Grocery shopping without a plan leads to impulse buys, forgotten items, and food
 
 ## The Solution
 
-Clawdbot helps plan meals based on what's on sale, generates optimized grocery lists, tracks what you have, and ensures nothing goes to waste.
+OpenClaw helps plan meals based on what's on sale, generates optimized grocery lists, tracks what you have, and ensures nothing goes to waste.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot helps plan meals based on what's on sale, generates optimized grocery l
 ### Step 1: Install Shopping Skills
 
 ```bash
-clawdbot skill install bring-shopping
-clawdbot skill install recipe-to-list
-clawdbot skill install gurkerl  # or picnic, instacart
+openclaw skill install bring-shopping
+openclaw skill install recipe-to-list
+openclaw skill install gurkerl  # or picnic, instacart
 ```
 
 ### Step 2: Configure Preferences
 
-Create `~/clawd/grocery/preferences.json`:
+Create `~/openclaw/grocery/preferences.json`:
 
 ```json
 {

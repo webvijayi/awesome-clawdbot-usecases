@@ -12,7 +12,7 @@ Managing social media presence across Twitter/X, LinkedIn, Bluesky, and Instagra
 
 ## The Solution
 
-Clawdbot takes one piece of content and automatically adapts it for each platform's format, character limits, and best practices. Schedule once, post everywhere at optimal times, and track what's working.
+OpenClaw takes one piece of content and automatically adapts it for each platform's format, character limits, and best practices. Schedule once, post everywhere at optimal times, and track what's working.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot takes one piece of content and automatically adapts it for each platfor
 ### Step 1: Install Required Skills (5 minutes)
 
 ```bash
-clawdbot skill install bluesky
-clawdbot skill install linkedin
-clawdbot skill install upload-post
+openclaw skill install bluesky
+openclaw skill install linkedin
+openclaw skill install upload-post
 ```
 
 ### Step 2: Create Content Templates
 
-Create `~/clawd/social-templates/`:
+Create `~/openclaw/social-templates/`:
 
 ```markdown
 # Social Media Templates
@@ -54,7 +54,7 @@ Create `~/clawd/social-templates/`:
 
 ### Step 3: Set Up Content Queue
 
-Create `~/clawd/content-queue.json`:
+Create `~/openclaw/content-queue.json`:
 
 ```json
 {

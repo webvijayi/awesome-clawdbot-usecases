@@ -12,7 +12,7 @@ Academic research is 80% tedious work: finding papers, managing citations, readi
 
 ## The Solution
 
-Clawdbot becomes your research assistant: searches academic databases, summarizes papers, manages citations, identifies research gaps, and helps you synthesize findings into coherent arguments.
+OpenClaw becomes your research assistant: searches academic databases, summarizes papers, manages citations, identifies research gaps, and helps you synthesize findings into coherent arguments.
 
 ---
 
@@ -21,16 +21,16 @@ Clawdbot becomes your research assistant: searches academic databases, summarize
 ### Step 1: Install Research Skills
 
 ```bash
-clawdbot skill install arxiv
-clawdbot skill install literature-review
-clawdbot skill install semantic-scholar
-clawdbot skill install pdf-extractor
-clawdbot skill install brave-search
+openclaw skill install arxiv
+openclaw skill install literature-review
+openclaw skill install semantic-scholar
+openclaw skill install pdf-extractor
+openclaw skill install brave-search
 ```
 
 ### Step 2: Define Research Focus
 
-Create `~/clawd/research/focus.md`:
+Create `~/openclaw/research/focus.md`:
 
 ```markdown
 # Research Focus
@@ -56,7 +56,7 @@ APA 7th Edition
 
 ### Step 3: Set Up Paper Library
 
-Create `~/clawd/research/papers/` directory structure:
+Create `~/openclaw/research/papers/` directory structure:
 
 ```
 papers/
@@ -69,7 +69,7 @@ papers/
 
 ### Step 4: Configure Paper Tracking
 
-Create `~/clawd/research/reading-list.md`:
+Create `~/openclaw/research/reading-list.md`:
 
 ```markdown
 # Reading List

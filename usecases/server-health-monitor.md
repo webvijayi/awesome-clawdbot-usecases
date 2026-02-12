@@ -12,7 +12,7 @@ Server issues don't wait for business hours. A crashed service at 3 AM means los
 
 ## The Solution
 
-Clawdbot continuously monitors your infrastructure, alerts you intelligently (not for every blip), attempts automatic remediation for known issues, and provides context when you need to investigate.
+OpenClaw continuously monitors your infrastructure, alerts you intelligently (not for every blip), attempts automatic remediation for known issues, and provides context when you need to investigate.
 
 ---
 
@@ -21,16 +21,16 @@ Clawdbot continuously monitors your infrastructure, alerts you intelligently (no
 ### Step 1: Install Monitoring Skills (5 minutes)
 
 ```bash
-clawdbot skill install uptime-kuma
-clawdbot skill install proxmox  # if using Proxmox
-clawdbot skill install hetzner-cloud  # if using Hetzner
-clawdbot skill install digital-ocean  # if using DO
-clawdbot skill install pm2  # for Node.js apps
+openclaw skill install uptime-kuma
+openclaw skill install proxmox  # if using Proxmox
+openclaw skill install hetzner-cloud  # if using Hetzner
+openclaw skill install digital-ocean  # if using DO
+openclaw skill install pm2  # for Node.js apps
 ```
 
 ### Step 2: Configure Uptime Kuma
 
-Create `~/clawd/monitoring/config.json`:
+Create `~/openclaw/monitoring/config.json`:
 
 ```json
 {
@@ -55,7 +55,7 @@ Create `~/clawd/monitoring/config.json`:
 
 ### Step 3: Define Auto-Remediation Rules
 
-Create `~/clawd/monitoring/remediation.md`:
+Create `~/openclaw/monitoring/remediation.md`:
 
 ```markdown
 # Auto-Remediation Playbook

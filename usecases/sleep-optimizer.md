@@ -12,7 +12,7 @@ Poor sleep destroys everything—focus, mood, health. You track with Whoop or Ou
 
 ## The Solution
 
-Clawdbot connects to your sleep trackers, identifies what's tanking your sleep score, enforces your wind-down routine, and adapts recommendations based on what actually works for *you*.
+OpenClaw connects to your sleep trackers, identifies what's tanking your sleep score, enforces your wind-down routine, and adapts recommendations based on what actually works for *you*.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot connects to your sleep trackers, identifies what's tanking your sleep s
 ### Step 1: Install Sleep & Recovery Skills
 
 ```bash
-clawdbot skill install whoop
-clawdbot skill install oura-ring  # alternative tracker
-clawdbot skill install calendar
-clawdbot skill install remind-me
+openclaw skill install whoop
+openclaw skill install oura-ring  # alternative tracker
+openclaw skill install calendar
+openclaw skill install remind-me
 ```
 
 ### Step 2: Configure Sleep Profile
 
-Create `~/clawd/sleep/profile.json`:
+Create `~/openclaw/sleep/profile.json`:
 
 ```json
 {
@@ -50,7 +50,7 @@ Create `~/clawd/sleep/profile.json`:
 
 ### Step 3: Define Wind-Down Routine
 
-Create `~/clawd/sleep/routine.md`:
+Create `~/openclaw/sleep/routine.md`:
 
 ```markdown
 # Wind-Down Routine (60 min before bed)
@@ -81,7 +81,7 @@ Create `~/clawd/sleep/routine.md`:
 
 ### Step 4: Create Sleep Log
 
-Create `~/clawd/sleep/log.json`:
+Create `~/openclaw/sleep/log.json`:
 
 ```json
 {

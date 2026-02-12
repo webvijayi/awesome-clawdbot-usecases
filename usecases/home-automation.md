@@ -12,7 +12,7 @@ Smart home devices are dumb in isolation. You have 10 apps for 10 devices. Creat
 
 ## The Solution
 
-Clawdbot becomes your home's brain: understands context (time, weather, who's home, your calendar), orchestrates devices together, and adapts to your life. Tell it what you want in natural language.
+OpenClaw becomes your home's brain: understands context (time, weather, who's home, your calendar), orchestrates devices together, and adapts to your life. Tell it what you want in natural language.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot becomes your home's brain: understands context (time, weather, who's ho
 ### Step 1: Install Smart Home Skills
 
 ```bash
-clawdbot skill install homeassistant
-clawdbot skill install homey-cli
-clawdbot skill install nest-devices
-clawdbot skill install netatmo
+openclaw skill install homeassistant
+openclaw skill install homey-cli
+openclaw skill install nest-devices
+openclaw skill install netatmo
 ```
 
 ### Step 2: Define Scenes
 
-Create `~/clawd/home/scenes.md`:
+Create `~/openclaw/home/scenes.md`:
 
 ```markdown
 # Home Scenes
@@ -61,7 +61,7 @@ Create `~/clawd/home/scenes.md`:
 
 ### Step 3: Set Context Rules
 
-Create `~/clawd/home/rules.md`:
+Create `~/openclaw/home/rules.md`:
 
 ```markdown
 # Automation Rules

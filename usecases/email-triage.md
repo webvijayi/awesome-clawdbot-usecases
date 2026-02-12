@@ -1,6 +1,6 @@
 # 📧 Email Triage Autopilot
 
-> Transform inbox chaos into organized action. Stop drowning in emails—let Clawdbot surface what matters.
+> Transform inbox chaos into organized action. Stop drowning in emails—let OpenClaw surface what matters.
 
 ---
 
@@ -12,9 +12,9 @@ The average professional receives 120+ emails daily, spending 2-3 hours just rea
 
 ## The Solution
 
-Clawdbot continuously monitors your inbox, categorizes every email by urgency and importance, drafts responses to routine queries, extracts action items into your todo system, and delivers a concise morning briefing of what actually needs your attention. You check email once or twice a day, fully informed, and respond only to what matters.
+OpenClaw continuously monitors your inbox, categorizes every email by urgency and importance, drafts responses to routine queries, extracts action items into your todo system, and delivers a concise morning briefing of what actually needs your attention. You check email once or twice a day, fully informed, and respond only to what matters.
 
-**The magic:** Clawdbot learns YOUR priorities—who's important, what topics are urgent, which newsletters you actually read vs. ignore.
+**The magic:** OpenClaw learns YOUR priorities—who's important, what topics are urgent, which newsletters you actually read vs. ignore.
 
 ---
 
@@ -24,19 +24,19 @@ Clawdbot continuously monitors your inbox, categorizes every email by urgency an
 
 ```bash
 # Install the gmail skill
-clawdbot skill install gmail
+openclaw skill install gmail
 
 # Authenticate (opens browser for OAuth)
-clawdbot skill gmail auth
+openclaw skill gmail auth
 ```
 
 For other providers:
-- **Outlook:** `clawdbot skill install outlook`
-- **IMAP:** `clawdbot skill install imap` (works with any provider)
+- **Outlook:** `openclaw skill install outlook`
+- **IMAP:** `openclaw skill install imap` (works with any provider)
 
 ### Step 2: Create Your Priority Rules File
 
-Create `~/clawd/email-rules.md`:
+Create `~/openclaw/email-rules.md`:
 
 ```markdown
 # Email Priority Rules
@@ -71,7 +71,7 @@ Create `~/clawd/email-rules.md`:
 
 ### Step 3: Set Up Your Todo Integration
 
-Choose your system and create `~/clawd/todo-config.md`:
+Choose your system and create `~/openclaw/todo-config.md`:
 
 ```markdown
 # Todo Integration
@@ -92,7 +92,7 @@ Choose your system and create `~/clawd/todo-config.md`:
 
 ### Step 4: Configure HEARTBEAT.md
 
-Add to your `~/clawd/HEARTBEAT.md`:
+Add to your `~/openclaw/HEARTBEAT.md`:
 
 ```markdown
 ## 📧 Email Triage (check every 2-4 hours)
@@ -109,16 +109,16 @@ Add to your `~/clawd/HEARTBEAT.md`:
 
 ```bash
 # Morning digest at 7:30 AM
-clawdbot cron add "30 7 * * *" "Deliver my email morning briefing. Read email-rules.md for priorities. Summarize: (1) urgent items, (2) important requiring response, (3) key FYIs. Be concise."
+openclaw cron add "30 7 * * *" "Deliver my email morning briefing. Read email-rules.md for priorities. Summarize: (1) urgent items, (2) important requiring response, (3) key FYIs. Be concise."
 
 # Midday check at 1 PM (urgent only)
-clawdbot cron add "0 13 * * *" "Quick email scan: only alert me if there's something URGENT per email-rules.md. Otherwise stay quiet."
+openclaw cron add "0 13 * * *" "Quick email scan: only alert me if there's something URGENT per email-rules.md. Otherwise stay quiet."
 
 # End of day wrap-up at 5:30 PM
-clawdbot cron add "30 17 * * 1-5" "Email EOD: (1) threads I haven't responded to in 24h, (2) action items extracted today, (3) anything that arrived after morning digest that needs attention tomorrow."
+openclaw cron add "30 17 * * 1-5" "Email EOD: (1) threads I haven't responded to in 24h, (2) action items extracted today, (3) anything that arrived after morning digest that needs attention tomorrow."
 
 # Weekly unsubscribe sweep (Sunday 10 AM)
-clawdbot cron add "0 10 * * 0" "Review emails marked NOISE this week. For senders appearing 3+ times: draft unsubscribe actions or add to permanent archive rules."
+openclaw cron add "0 10 * * 0" "Review emails marked NOISE this week. For senders appearing 3+ times: draft unsubscribe actions or add to permanent archive rules."
 ```
 
 ---
@@ -127,9 +127,9 @@ clawdbot cron add "0 10 * * 0" "Review emails marked NOISE this week. For sender
 
 | Skill | Purpose | Install |
 |-------|---------|---------|
-| `gmail` or `outlook` or `imap` | Email access | `clawdbot skill install gmail` |
-| `todoist` / `notion` / `obsidian` | Action item sync | `clawdbot skill install todoist` |
-| Core Clawdbot | Cron, heartbeats, memory | Built-in |
+| `gmail` or `outlook` or `imap` | Email access | `openclaw skill install gmail` |
+| `todoist` / `notion` / `obsidian` | Action item sync | `openclaw skill install todoist` |
+| Core OpenClaw | Cron, heartbeats, memory | Built-in |
 
 **Optional enhancements:**
 - `calendar` - Cross-reference meeting-related emails
@@ -218,7 +218,7 @@ Add this section to your `HEARTBEAT.md`:
 ## 📧 Email Triage Autopilot
 
 ### Quick Check (every heartbeat)
-- Scan for URGENT emails per ~/clawd/email-rules.md
+- Scan for URGENT emails per ~/openclaw/email-rules.md
 - If urgent found: notify immediately, don't wait for digest
 - Log check timestamp to memory/heartbeat-state.json
 
@@ -272,7 +272,7 @@ Add this section to your `HEARTBEAT.md`:
 ## Pro Tips
 
 ### 1. Train Your Triage
-After each digest, tell Clawdbot about miscategorizations:
+After each digest, tell OpenClaw about miscategorizations:
 > "That email from [sender] should be IMPORTANT, not FYI. Update my rules."
 
 ### 2. VIP Sender List
@@ -281,7 +281,7 @@ Maintain an explicit list in `email-rules.md`. Anyone not on it gets lower prior
 ### 3. Response Templates
 Build a library of your common responses:
 ```markdown
-## ~/clawd/email-templates.md
+## ~/openclaw/email-templates.md
 ### meeting-request
 Happy to meet! Here's my calendar link: [link]. Pick any open slot.
 
@@ -303,7 +303,7 @@ For true inbox bankruptcy:
 
 ## Troubleshooting
 
-**"Clawdbot isn't catching urgent emails fast enough"**
+**"OpenClaw isn't catching urgent emails fast enough"**
 - Reduce heartbeat interval for urgent scanning
 - Add more specific triggers to URGENT rules
 - Consider dedicated urgent-only cron every 30 minutes
@@ -336,4 +336,4 @@ That's an entire work week back, every month. From 25 minutes of setup.
 
 ---
 
-*Your inbox is a stream, not a bucket. Let Clawdbot fish out what matters.*
+*Your inbox is a stream, not a bucket. Let OpenClaw fish out what matters.*

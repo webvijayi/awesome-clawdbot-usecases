@@ -12,7 +12,7 @@ Information overload is real. Between Twitter, Hacker News, Reddit, newsletters,
 
 ## The Solution
 
-Clawdbot monitors your chosen sources, filters by your interests, removes duplicates, and delivers a personalized digest at your preferred time. It learns what you engage with and improves over time.
+OpenClaw monitors your chosen sources, filters by your interests, removes duplicates, and delivers a personalized digest at your preferred time. It learns what you engage with and improves over time.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot monitors your chosen sources, filters by your interests, removes duplic
 ### Step 1: Install News Skills (5 minutes)
 
 ```bash
-clawdbot skill install miniflux  # RSS aggregator
-clawdbot skill install hn-digest  # Hacker News
-clawdbot skill install reddit  # Reddit
-clawdbot skill install bbc-news  # BBC News
+openclaw skill install miniflux  # RSS aggregator
+openclaw skill install hn-digest  # Hacker News
+openclaw skill install reddit  # Reddit
+openclaw skill install bbc-news  # BBC News
 ```
 
 ### Step 2: Define Your Interests
 
-Create `~/clawd/news/interests.md`:
+Create `~/openclaw/news/interests.md`:
 
 ```markdown
 # My News Interests
@@ -58,7 +58,7 @@ Create `~/clawd/news/interests.md`:
 
 ### Step 3: Configure Sources
 
-Create `~/clawd/news/sources.json`:
+Create `~/openclaw/news/sources.json`:
 
 ```json
 {

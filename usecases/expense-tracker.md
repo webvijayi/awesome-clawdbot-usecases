@@ -12,7 +12,7 @@ Tracking expenses is tedious. You start with good intentions, manually log for a
 
 ## The Solution
 
-Clawdbot automatically categorizes transactions, identifies spending patterns, alerts on unusual charges, and gives you clear insights—no manual entry required.
+OpenClaw automatically categorizes transactions, identifies spending patterns, alerts on unusual charges, and gives you clear insights—no manual entry required.
 
 ---
 
@@ -21,13 +21,13 @@ Clawdbot automatically categorizes transactions, identifies spending patterns, a
 ### Step 1: Install Finance Skills
 
 ```bash
-clawdbot skill install copilot-money  # or plaid
-clawdbot skill install excel
+openclaw skill install copilot-money  # or plaid
+openclaw skill install excel
 ```
 
 ### Step 2: Configure Categories
 
-Create `~/clawd/expenses/categories.json`:
+Create `~/openclaw/expenses/categories.json`:
 
 ```json
 {
@@ -49,7 +49,7 @@ Create `~/clawd/expenses/categories.json`:
 
 ### Step 3: Set Alert Rules
 
-Create `~/clawd/expenses/alerts.md`:
+Create `~/openclaw/expenses/alerts.md`:
 
 ```markdown
 # Expense Alerts

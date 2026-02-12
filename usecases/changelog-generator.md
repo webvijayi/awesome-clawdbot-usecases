@@ -12,7 +12,7 @@ Writing changelogs is boring but necessary. You forget what changed, PR descript
 
 ## The Solution
 
-Clawdbot analyzes commits and PRs since last release, groups by type, writes user-friendly descriptions, and generates formatted changelogs automatically.
+OpenClaw analyzes commits and PRs since last release, groups by type, writes user-friendly descriptions, and generates formatted changelogs automatically.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot analyzes commits and PRs since last release, groups by type, writes use
 ### Step 1: Install Git Skills
 
 ```bash
-clawdbot skill install github
-clawdbot skill install app-store-changelog
-clawdbot skill install conventional-commits
+openclaw skill install github
+openclaw skill install app-store-changelog
+openclaw skill install conventional-commits
 ```
 
 ### Step 2: Configure Format
 
-Create `~/clawd/changelog/config.json`:
+Create `~/openclaw/changelog/config.json`:
 
 ```json
 {

@@ -8,7 +8,7 @@ You're juggling 30+ clients across email, calls, Slack, WhatsApp, and meetings�
 
 ## The Solution
 
-Clawdbot becomes your relationship memory layer. After every client interaction, you dump the context in natural language—Clawdbot structures it, stores it, and surfaces it exactly when you need it. Before any call, get a 30-second briefing. After any meeting, capture notes hands-free. Get proactive nudges when follow-ups are due. Your clients feel remembered because they *are* remembered.
+OpenClaw becomes your relationship memory layer. After every client interaction, you dump the context in natural language—OpenClaw structures it, stores it, and surfaces it exactly when you need it. Before any call, get a 30-second briefing. After any meeting, capture notes hands-free. Get proactive nudges when follow-ups are due. Your clients feel remembered because they *are* remembered.
 
 ## Setup Guide
 
@@ -16,20 +16,20 @@ Clawdbot becomes your relationship memory layer. After every client interaction,
 
 ### Step 1: Create Client Memory Structure (2 min)
 
-Tell Clawdbot:
+Tell OpenClaw:
 ```
 Create a client memory system with this structure:
-- /root/clawd/clients/contacts.json (master contact list)
-- /root/clawd/clients/interactions/ (individual client folders)
-- /root/clawd/clients/templates/ (briefing templates)
-- /root/clawd/clients/followups.json (scheduled follow-ups)
+- /root/openclaw/clients/contacts.json (master contact list)
+- /root/openclaw/clients/interactions/ (individual client folders)
+- /root/openclaw/clients/templates/ (briefing templates)
+- /root/openclaw/clients/followups.json (scheduled follow-ups)
 
 Initialize contacts.json as an empty array and followups.json as an empty object.
 ```
 
 ### Step 2: Define Your Contact Schema (3 min)
 
-Tell Clawdbot:
+Tell OpenClaw:
 ```
 Add a template for client records. Each client should track:
 - name, company, role, email, phone
@@ -54,7 +54,7 @@ Add client: Sarah Chen, VP Engineering at TechFlow
 - Last talked March 15 about the new API features
 ```
 
-Repeat for 4 more clients. Clawdbot will structure and store.
+Repeat for 4 more clients. OpenClaw will structure and store.
 
 ### Step 4: Configure Your Briefing Workflow (3 min)
 
@@ -66,14 +66,14 @@ Create a pre-call briefing template that shows me:
 4. Personal context worth mentioning
 5. Suggested talking points
 
-Save to /root/clawd/clients/templates/briefing.md
+Save to /root/openclaw/clients/templates/briefing.md
 ```
 
 ### Step 5: Set Up Follow-Up Tracking (2 min)
 
 ```
 Add to HEARTBEAT.md:
-- Check /root/clawd/clients/followups.json for any follow-ups due today or overdue
+- Check /root/openclaw/clients/followups.json for any follow-ups due today or overdue
 - Check contacts where last_contact is older than their follow_up_cadence
 - Alert me to relationships going cold (no contact in 2x their normal cadence)
 ```
@@ -132,19 +132,19 @@ What did I promise Lisa about the API documentation? When did I last mention it?
 
 ```bash
 # Morning briefing: Today's client meetings with full context
-0 8 * * 1-5 clawdbot cron "Check my calendar for today's client meetings. For each one, pull the client briefing and send me a consolidated prep doc."
+0 8 * * 1-5 openclaw cron "Check my calendar for today's client meetings. For each one, pull the client briefing and send me a consolidated prep doc."
 
 # Follow-up scanner: Catch overdue check-ins at lunch
-0 12 * * 1-5 clawdbot cron "Scan followups.json and all client records. List anyone overdue for contact or approaching their follow-up date. Prioritize by relationship value."
+0 12 * * 1-5 openclaw cron "Scan followups.json and all client records. List anyone overdue for contact or approaching their follow-up date. Prioritize by relationship value."
 
 # Weekly relationship report: Friday afternoon reflection
-0 16 * * 5 clawdbot cron "Generate my weekly client relationship report: interactions logged this week, relationships that warmed or cooled, commitments made, follow-ups scheduled for next week."
+0 16 * * 5 openclaw cron "Generate my weekly client relationship report: interactions logged this week, relationships that warmed or cooled, commitments made, follow-ups scheduled for next week."
 
 # Email context capture: Pull client email threads daily
-0 9 * * 1-5 clawdbot cron "Scan my inbox for emails from known clients in the last 24h. Log key points to their interaction history. Flag anything that needs my response."
+0 9 * * 1-5 openclaw cron "Scan my inbox for emails from known clients in the last 24h. Log key points to their interaction history. Flag anything that needs my response."
 
 # Monthly deep review: First Monday, relationship audit
-0 9 1-7 * 1 clawdbot cron "Monthly client audit: Who haven't I contacted in 30+ days? Any clients who went silent? Suggest re-engagement strategies for cold relationships."
+0 9 1-7 * 1 openclaw cron "Monthly client audit: Who haven't I contacted in 30+ days? Any clients who went silent? Suggest re-engagement strategies for cold relationships."
 ```
 
 ## HEARTBEAT.md Config
@@ -155,7 +155,7 @@ Add this to your `HEARTBEAT.md`:
 ## Client Memory Hub Checks
 
 ### Every heartbeat:
-- [ ] Check `/root/clawd/clients/followups.json` for items due today
+- [ ] Check `/root/openclaw/clients/followups.json` for items due today
 - [ ] If any overdue follow-ups (due date < today), alert immediately
 
 ### 2-3x daily (spread out):
@@ -203,7 +203,7 @@ Add this to your `HEARTBEAT.md`:
 
 ## Pro Tips
 
-1. **Voice capture**: Use Clawdbot's mobile interface to voice-log interactions right after calls while context is fresh.
+1. **Voice capture**: Use OpenClaw's mobile interface to voice-log interactions right after calls while context is fresh.
 
 2. **Tag important patterns**: When you notice something that works ("Sarah always buys after I mention ROI case studies"), log it as a `what_works` field.
 
@@ -211,7 +211,7 @@ Add this to your `HEARTBEAT.md`:
 
 4. **Graduation criteria**: Once a client is stable/low-touch, extend their cadence. Don't over-contact happy customers.
 
-5. **Failure logging**: When you drop a ball, log *why*. Clawdbot can help you spot patterns in your own failures.
+5. **Failure logging**: When you drop a ball, log *why*. OpenClaw can help you spot patterns in your own failures.
 
 ---
 

@@ -12,7 +12,7 @@ Daily standups eat 15-30 minutes of everyone's time, often at the worst part of 
 
 ## The Solution
 
-Clawdbot runs async standups: collects updates via DM at each person's preferred time, identifies blockers automatically, creates digestible summaries, and alerts the right people when action is needed. Your team gets focused time back while staying more informed than before.
+OpenClaw runs async standups: collects updates via DM at each person's preferred time, identifies blockers automatically, creates digestible summaries, and alerts the right people when action is needed. Your team gets focused time back while staying more informed than before.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot runs async standups: collects updates via DM at each person's preferred
 ### Step 1: Install Communication Skills
 
 ```bash
-clawdbot skill install slack          # Slack integration
-clawdbot skill install discord        # Discord support
-clawdbot skill install telegram       # Telegram bots
-clawdbot skill install linear         # Issue tracker integration
+openclaw skill install slack          # Slack integration
+openclaw skill install discord        # Discord support
+openclaw skill install telegram       # Telegram bots
+openclaw skill install linear         # Issue tracker integration
 ```
 
 ### Step 2: Define Team Structure
 
-Create `~/clawd/standups/team.json`:
+Create `~/openclaw/standups/team.json`:
 
 ```json
 {
@@ -47,7 +47,7 @@ Create `~/clawd/standups/team.json`:
 
 ### Step 3: Configure Standup Questions
 
-Create `~/clawd/standups/questions.md`:
+Create `~/openclaw/standups/questions.md`:
 
 ```markdown
 # Standup Questions
@@ -72,7 +72,7 @@ Create `~/clawd/standups/questions.md`:
 
 ### Step 4: Set Up Blocker Detection
 
-Create `~/clawd/standups/alerts.md`:
+Create `~/openclaw/standups/alerts.md`:
 
 ```markdown
 # Alert Rules

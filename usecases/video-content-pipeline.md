@@ -12,7 +12,7 @@ YouTube success requires more than good videos—it demands optimized titles, th
 
 ## The Solution
 
-Clawdbot handles the YouTube grind: researches trending topics, writes scroll-stopping scripts, generates thumbnail concepts, crafts SEO-optimized metadata, and analyzes what's working in your niche. You focus on filming; Clawdbot handles everything else.
+OpenClaw handles the YouTube grind: researches trending topics, writes scroll-stopping scripts, generates thumbnail concepts, crafts SEO-optimized metadata, and analyzes what's working in your niche. You focus on filming; OpenClaw handles everything else.
 
 ---
 
@@ -21,19 +21,19 @@ Clawdbot handles the YouTube grind: researches trending topics, writes scroll-st
 ### Step 1: Install Video Skills
 
 ```bash
-clawdbot skill install youtube-summarizer  # Analyze competitor videos
-clawdbot skill install brave-search        # Trend research
-clawdbot skill install web-fetch           # Pull video data
-clawdbot skill install local-whisper       # Transcription
+openclaw skill install youtube-summarizer  # Analyze competitor videos
+openclaw skill install brave-search        # Trend research
+openclaw skill install web-fetch           # Pull video data
+openclaw skill install local-whisper       # Transcription
 ```
 
 ### Step 2: Create Video Workspace
 
 ```bash
-mkdir -p ~/clawd/youtube/{scripts,thumbnails,analytics,research}
+mkdir -p ~/openclaw/youtube/{scripts,thumbnails,analytics,research}
 ```
 
-Create `~/clawd/youtube/channel-profile.json`:
+Create `~/openclaw/youtube/channel-profile.json`:
 
 ```json
 {
@@ -52,7 +52,7 @@ Create `~/clawd/youtube/channel-profile.json`:
 
 ### Step 3: Create Script Template
 
-Create `~/clawd/youtube/script-template.md`:
+Create `~/openclaw/youtube/script-template.md`:
 
 ```markdown
 # Video Script: {title}

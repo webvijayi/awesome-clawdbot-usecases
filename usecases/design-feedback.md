@@ -12,7 +12,7 @@ Designers often work in isolation—you finish a design, share it, and wait days
 
 ## The Solution
 
-Clawdbot provides instant, structured design feedback: reviews UI screenshots for usability issues, audits accessibility compliance, compares against your design system, and helps document components. Get a fresh perspective anytime, not just during review meetings.
+OpenClaw provides instant, structured design feedback: reviews UI screenshots for usability issues, audits accessibility compliance, compares against your design system, and helps document components. Get a fresh perspective anytime, not just during review meetings.
 
 ---
 
@@ -21,18 +21,18 @@ Clawdbot provides instant, structured design feedback: reviews UI screenshots fo
 ### Step 1: Install Design Skills
 
 ```bash
-clawdbot skill install browser     # Screenshot and visual analysis
-clawdbot skill install web-fetch   # Reference design patterns
-clawdbot skill install image       # Image analysis capabilities
+openclaw skill install browser     # Screenshot and visual analysis
+openclaw skill install web-fetch   # Reference design patterns
+openclaw skill install image       # Image analysis capabilities
 ```
 
 ### Step 2: Create Design Workspace
 
 ```bash
-mkdir -p ~/clawd/design/{reviews,components,accessibility}
+mkdir -p ~/openclaw/design/{reviews,components,accessibility}
 ```
 
-Create `~/clawd/design/design-system.md`:
+Create `~/openclaw/design/design-system.md`:
 
 ```markdown
 # Design System Reference
@@ -61,7 +61,7 @@ Create `~/clawd/design/design-system.md`:
 
 ### Step 3: Set Up Review Checklist
 
-Create `~/clawd/design/review-checklist.md`:
+Create `~/openclaw/design/review-checklist.md`:
 
 ```markdown
 # UI/UX Review Checklist
@@ -116,7 +116,7 @@ Audit this design for WCAG 2.1 AA compliance. Check color contrast, touch target
 
 **Design system check:**
 ```
-Compare this component against my design system in ~/clawd/design/design-system.md. Note any deviations from our standards.
+Compare this component against my design system in ~/openclaw/design/design-system.md. Note any deviations from our standards.
 ```
 
 **Component documentation:**

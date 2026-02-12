@@ -12,7 +12,7 @@ AI API costs add up fast and unpredictably. You're using Claude, GPT-4, Gemini a
 
 ## The Solution
 
-Clawdbot tracks your AI usage across all providers, alerts on unusual spending, identifies cost optimization opportunities, and helps you choose the right model for each task.
+OpenClaw tracks your AI usage across all providers, alerts on unusual spending, identifies cost optimization opportunities, and helps you choose the right model for each task.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot tracks your AI usage across all providers, alerts on unusual spending, 
 ### Step 1: Install Tracking Skills
 
 ```bash
-clawdbot skill install claude-code-usage
-clawdbot skill install codex-quota
-clawdbot skill install minimax-usage
+openclaw skill install claude-code-usage
+openclaw skill install codex-quota
+openclaw skill install minimax-usage
 ```
 
 ### Step 2: Configure Providers
 
-Create `~/clawd/ai-costs/providers.json`:
+Create `~/openclaw/ai-costs/providers.json`:
 
 ```json
 {
@@ -55,7 +55,7 @@ Create `~/clawd/ai-costs/providers.json`:
 
 ### Step 3: Set Up Cost Rules
 
-Create `~/clawd/ai-costs/rules.md`:
+Create `~/openclaw/ai-costs/rules.md`:
 
 ```markdown
 # AI Cost Optimization Rules

@@ -12,7 +12,7 @@ Portfolio tracking apps show prices but miss context. What earnings are coming? 
 
 ## The Solution
 
-Clawdbot monitors your portfolio with context: tracks prices, alerts on significant moves, summarizes relevant news, and reminds you of earnings dates. Informed without obsessed.
+OpenClaw monitors your portfolio with context: tracks prices, alerts on significant moves, summarizes relevant news, and reminds you of earnings dates. Informed without obsessed.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot monitors your portfolio with context: tracks prices, alerts on signific
 ### Step 1: Install Finance Skills
 
 ```bash
-clawdbot skill install stock-analysis
-clawdbot skill install yahoo-finance
-clawdbot skill install portfolio-watcher
+openclaw skill install stock-analysis
+openclaw skill install yahoo-finance
+openclaw skill install portfolio-watcher
 ```
 
 ### Step 2: Enter Your Holdings
 
-Create `~/clawd/portfolio/holdings.json`:
+Create `~/openclaw/portfolio/holdings.json`:
 
 ```json
 {
@@ -55,7 +55,7 @@ Create `~/clawd/portfolio/holdings.json`:
 
 ### Step 3: Set Alert Thresholds
 
-Create `~/clawd/portfolio/alerts.md`:
+Create `~/openclaw/portfolio/alerts.md`:
 
 ```markdown
 # Portfolio Alerts

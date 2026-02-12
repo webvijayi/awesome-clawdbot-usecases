@@ -12,7 +12,7 @@ Habit apps are easy to ignore. You set ambitious goals, track for a week, then f
 
 ## The Solution
 
-Clawdbot becomes your accountability partner: checks in daily, celebrates streaks, adjusts when you're struggling, and provides the gentle (or firm) nudge you need. It understands context—a missed day during illness is different from laziness.
+OpenClaw becomes your accountability partner: checks in daily, celebrates streaks, adjusts when you're struggling, and provides the gentle (or firm) nudge you need. It understands context—a missed day during illness is different from laziness.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot becomes your accountability partner: checks in daily, celebrates streak
 ### Step 1: Install Productivity Skills
 
 ```bash
-clawdbot skill install todoist  # or ticktick, omnifocus
-clawdbot skill install timer
-clawdbot skill install remind-me
+openclaw skill install todoist  # or ticktick, omnifocus
+openclaw skill install timer
+openclaw skill install remind-me
 ```
 
 ### Step 2: Define Your Habits
 
-Create `~/clawd/habits/habits.json`:
+Create `~/openclaw/habits/habits.json`:
 
 ```json
 {
@@ -64,7 +64,7 @@ Create `~/clawd/habits/habits.json`:
 
 ### Step 3: Set Accountability Level
 
-Create `~/clawd/habits/settings.md`:
+Create `~/openclaw/habits/settings.md`:
 
 ```markdown
 # Accountability Settings

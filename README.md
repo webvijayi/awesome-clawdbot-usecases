@@ -1,4 +1,4 @@
-# Awesome Clawdbot Use Cases
+# Awesome OpenClaw Use Cases
 
 > **42 practical use cases** that actually make money or save 1+ hour daily. No hype, just results.
 
@@ -102,16 +102,16 @@ Every use case here passes a simple test:
 
 Each use case includes:
 1. **The Problem** - Why this matters
-2. **The Solution** - How Clawdbot solves it
+2. **The Solution** - How OpenClaw solves it
 3. **Setup Guide** - Step-by-step instructions
-4. **Skills Needed** - Required Clawdbot skills
+4. **Skills Needed** - Required OpenClaw skills
 5. **Example Prompts** - Copy-paste ready
 6. **Cron Schedule** - Automation timing
 7. **Expected Results** - What you'll get
 
 ## Requirements
 
-- [Clawdbot/OpenClaw](https://github.com/openclaw/openclaw) installed
+- [OpenClaw/OpenClaw](https://github.com/openclaw/openclaw) installed
 - Relevant skills from [awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)
 - 10-30 minutes to set up each workflow
 
@@ -121,4 +121,4 @@ Found a use case that makes you money or saves serious time? [Open a PR](CONTRIB
 
 ---
 
-*Built by people who use Clawdbot daily, for people who want results.*
+*Built by people who use OpenClaw daily, for people who want results.*

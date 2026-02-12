@@ -12,7 +12,7 @@ Code reviews are bottlenecks. PRs sit for days waiting for busy teammates. When 
 
 ## The Solution
 
-Clawdbot automatically reviews every PR: checks for bugs, security issues, style violations, and suggests improvements. Human reviewers can focus on architecture and business logic while Clawdbot handles the tedious stuff.
+OpenClaw automatically reviews every PR: checks for bugs, security issues, style violations, and suggests improvements. Human reviewers can focus on architecture and business logic while OpenClaw handles the tedious stuff.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot automatically reviews every PR: checks for bugs, security issues, style
 ### Step 1: Install Skills
 
 ```bash
-clawdbot skill install github
-clawdbot skill install github-pr
-clawdbot skill install conventional-commits
+openclaw skill install github
+openclaw skill install github-pr
+openclaw skill install conventional-commits
 ```
 
 ### Step 2: Configure Review Rules
 
-Create `~/clawd/pr-review/rules.md`:
+Create `~/openclaw/pr-review/rules.md`:
 
 ```markdown
 # PR Review Checklist

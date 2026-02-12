@@ -12,7 +12,7 @@ Nutrition apps are tedious. Scanning barcodes, weighing portions, logging every 
 
 ## The Solution
 
-Clawdbot makes logging effortless: snap a photo or describe your meal in plain language. It estimates macros, tracks patterns, suggests meals that fit your goals, and adapts to your preferences over time.
+OpenClaw makes logging effortless: snap a photo or describe your meal in plain language. It estimates macros, tracks patterns, suggests meals that fit your goals, and adapts to your preferences over time.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot makes logging effortless: snap a photo or describe your meal in plain l
 ### Step 1: Install Nutrition Skills
 
 ```bash
-clawdbot skill install nutritionix  # food database
-clawdbot skill install recipe-parser
-clawdbot skill install remind-me
-clawdbot skill install grocery-list  # optional
+openclaw skill install nutritionix  # food database
+openclaw skill install recipe-parser
+openclaw skill install remind-me
+openclaw skill install grocery-list  # optional
 ```
 
 ### Step 2: Configure Nutrition Goals
 
-Create `~/clawd/nutrition/profile.json`:
+Create `~/openclaw/nutrition/profile.json`:
 
 ```json
 {
@@ -57,7 +57,7 @@ Create `~/clawd/nutrition/profile.json`:
 
 ### Step 3: Define Meal Templates
 
-Create `~/clawd/nutrition/favorites.json`:
+Create `~/openclaw/nutrition/favorites.json`:
 
 ```json
 {
@@ -95,7 +95,7 @@ Create `~/clawd/nutrition/favorites.json`:
 
 ### Step 4: Create Daily Log Structure
 
-Create `~/clawd/nutrition/log/template.json`:
+Create `~/openclaw/nutrition/log/template.json`:
 
 ```json
 {

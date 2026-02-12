@@ -8,7 +8,7 @@ Creating content for one platform is hard enough—repurposing it for Twitter, L
 
 ## The Solution
 
-Clawdbot acts as your always-on content repurposing assistant. Drop a blog post URL, paste a video transcript, or share podcast notes—Clawdbot transforms it into platform-native content for every channel you care about. It understands each platform's style: Twitter threads with hooks, LinkedIn thought-leadership angles, Instagram carousel concepts, punchy newsletter snippets, and Reddit-appropriate discussion starters. Set it up once, and your content multiplies while you sleep.
+OpenClaw acts as your always-on content repurposing assistant. Drop a blog post URL, paste a video transcript, or share podcast notes—OpenClaw transforms it into platform-native content for every channel you care about. It understands each platform's style: Twitter threads with hooks, LinkedIn thought-leadership angles, Instagram carousel concepts, punchy newsletter snippets, and Reddit-appropriate discussion starters. Set it up once, and your content multiplies while you sleep.
 
 ## Setup Guide
 
@@ -66,7 +66,7 @@ Create `~/content-engine/templates/platforms.md`:
 
 ### Step 3: Add to TOOLS.md (1 minute)
 
-Add this to your `~/clawd/TOOLS.md`:
+Add this to your `~/openclaw/TOOLS.md`:
 
 ```markdown
 ### Content Engine
@@ -78,7 +78,7 @@ Add this to your `~/clawd/TOOLS.md`:
 
 ### Step 4: Configure HEARTBEAT.md (2 minutes)
 
-Add this section to your `~/clawd/HEARTBEAT.md`:
+Add this section to your `~/openclaw/HEARTBEAT.md`:
 
 ```markdown
 ### Content Multiplication Check
@@ -104,7 +104,7 @@ Title: 5 Lessons from Building in Public
 - Lesson 5: Building in public is marketing that doesn't feel like marketing
 ```
 
-Then tell Clawdbot: "Process my new content in the input folder"
+Then tell OpenClaw: "Process my new content in the input folder"
 
 ## Skills Needed
 
@@ -118,7 +118,7 @@ Then tell Clawdbot: "Process my new content in the input folder"
 
 **Minimum setup:** Just file system + one messaging channel. You can copy-paste outputs manually.
 
-**Power setup:** Add social media skills to post directly from Clawdbot.
+**Power setup:** Add social media skills to post directly from OpenClaw.
 
 ## Example Prompts
 
@@ -274,7 +274,7 @@ Add this block to your `HEARTBEAT.md`:
 ### Long-term (3+ Months)
 - 🌐 **Audience growth:** Consistent presence = compound growth
 - 📚 **Content library:** Organized archive of all variations
-- 🧠 **Pattern recognition:** Clawdbot learns your voice and what performs
+- 🧠 **Pattern recognition:** OpenClaw learns your voice and what performs
 
 ### Sample Output Structure
 

@@ -12,7 +12,7 @@ Planning a trip means juggling 10 browser tabs: flights, hotels, activities, res
 
 ## The Solution
 
-Clawdbot handles the entire trip planning process: finds flights, suggests accommodations matching your preferences, builds day-by-day itineraries, and adapts when plans change. All in one conversation.
+OpenClaw handles the entire trip planning process: finds flights, suggests accommodations matching your preferences, builds day-by-day itineraries, and adapts when plans change. All in one conversation.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot handles the entire trip planning process: finds flights, suggests accom
 ### Step 1: Install Travel Skills
 
 ```bash
-clawdbot skill install flights
-clawdbot skill install flight-tracker
-clawdbot skill install weather
-clawdbot skill install spots  # For local recommendations
+openclaw skill install flights
+openclaw skill install flight-tracker
+openclaw skill install weather
+openclaw skill install spots  # For local recommendations
 ```
 
 ### Step 2: Set Your Preferences
 
-Create `~/clawd/travel/preferences.md`:
+Create `~/openclaw/travel/preferences.md`:
 
 ```markdown
 # My Travel Preferences
@@ -60,7 +60,7 @@ Create `~/clawd/travel/preferences.md`:
 
 ### Step 3: Create Trip Template
 
-Create `~/clawd/travel/trip-template.md`:
+Create `~/openclaw/travel/trip-template.md`:
 
 ```markdown
 # Trip: {destination}

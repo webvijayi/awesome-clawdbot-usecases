@@ -12,7 +12,7 @@ Creating SEO content is time-consuming: keyword research, competitor analysis, o
 
 ## The Solution
 
-Clawdbot handles the entire SEO content workflow: finds keyword opportunities, analyzes what's ranking, creates optimized outlines, and helps you write content that ranks AND reads well.
+OpenClaw handles the entire SEO content workflow: finds keyword opportunities, analyzes what's ranking, creates optimized outlines, and helps you write content that ranks AND reads well.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot handles the entire SEO content workflow: finds keyword opportunities, a
 ### Step 1: Install SEO Skills
 
 ```bash
-clawdbot skill install gsc  # Google Search Console
-clawdbot skill install brave-search
-clawdbot skill install web-fetch
+openclaw skill install gsc  # Google Search Console
+openclaw skill install brave-search
+openclaw skill install web-fetch
 ```
 
 ### Step 2: Configure Your Site
 
-Create `~/clawd/seo/site-config.json`:
+Create `~/openclaw/seo/site-config.json`:
 
 ```json
 {
@@ -45,7 +45,7 @@ Create `~/clawd/seo/site-config.json`:
 
 ### Step 3: Create Content Brief Template
 
-Create `~/clawd/seo/brief-template.md`:
+Create `~/openclaw/seo/brief-template.md`:
 
 ```markdown
 # Content Brief: {keyword}

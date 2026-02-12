@@ -12,7 +12,7 @@ Self-directed learning is chaotic. You want to learn [skill] but don't know wher
 
 ## The Solution
 
-Clawdbot creates personalized curricula: assesses your starting point, finds the best resources, creates a structured path, tracks progress, and adjusts when you struggle or excel.
+OpenClaw creates personalized curricula: assesses your starting point, finds the best resources, creates a structured path, tracks progress, and adjusts when you struggle or excel.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot creates personalized curricula: assesses your starting point, finds the
 ### Step 1: Install Learning Skills
 
 ```bash
-clawdbot skill install context7
-clawdbot skill install literature-review
-clawdbot skill install youtube-summarizer
+openclaw skill install context7
+openclaw skill install literature-review
+openclaw skill install youtube-summarizer
 ```
 
 ### Step 2: Define Learning Goals
 
-Create `~/clawd/learning/goals.json`:
+Create `~/openclaw/learning/goals.json`:
 
 ```json
 {
@@ -49,7 +49,7 @@ Create `~/clawd/learning/goals.json`:
 
 ### Step 3: Create Progress Tracker
 
-Create `~/clawd/learning/progress.md`:
+Create `~/openclaw/learning/progress.md`:
 
 ```markdown
 # Learning Progress

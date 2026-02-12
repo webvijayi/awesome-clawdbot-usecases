@@ -12,7 +12,7 @@ Workout motivation fades. You start strong, skip a few days, then stop entirely.
 
 ## The Solution
 
-Clawdbot is your accountability partner: tracks workouts, adjusts plans based on progress, celebrates wins, and calls you out (gently) when you're slacking.
+OpenClaw is your accountability partner: tracks workouts, adjusts plans based on progress, celebrates wins, and calls you out (gently) when you're slacking.
 
 ---
 
@@ -21,13 +21,13 @@ Clawdbot is your accountability partner: tracks workouts, adjusts plans based on
 ### Step 1: Install Fitness Skills
 
 ```bash
-clawdbot skill install whoop  # or strava, workout-logger
-clawdbot skill install strava-cycling-coach
+openclaw skill install whoop  # or strava, workout-logger
+openclaw skill install strava-cycling-coach
 ```
 
 ### Step 2: Set Goals
 
-Create `~/clawd/fitness/goals.json`:
+Create `~/openclaw/fitness/goals.json`:
 
 ```json
 {

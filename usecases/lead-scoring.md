@@ -12,7 +12,7 @@ Not all leads are equal, but treating them equally wastes time. Your inbox mixes
 
 ## The Solution
 
-Clawdbot automatically scores every lead based on signals you define: company size, title, engagement, tech stack, funding status. You see a prioritized list and act accordingly.
+OpenClaw automatically scores every lead based on signals you define: company size, title, engagement, tech stack, funding status. You see a prioritized list and act accordingly.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot automatically scores every lead based on signals you define: company si
 ### Step 1: Install Sales Skills
 
 ```bash
-clawdbot skill install hubspot  # or your CRM
-clawdbot skill install apollo
-clawdbot skill install gmail
-clawdbot skill install linkedin
+openclaw skill install hubspot  # or your CRM
+openclaw skill install apollo
+openclaw skill install gmail
+openclaw skill install linkedin
 ```
 
 ### Step 2: Define Scoring Criteria
 
-Create `~/clawd/leads/scoring.json`:
+Create `~/openclaw/leads/scoring.json`:
 
 ```json
 {
@@ -70,7 +70,7 @@ Create `~/clawd/leads/scoring.json`:
 
 ### Step 3: Set Up Routing Rules
 
-Create `~/clawd/leads/routing.md`:
+Create `~/openclaw/leads/routing.md`:
 
 ```markdown
 # Lead Routing

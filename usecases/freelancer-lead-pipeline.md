@@ -12,7 +12,7 @@ Finding quality freelance gigs is a full-time job on top of your actual work. Yo
 
 ## The Solution
 
-Clawdbot monitors job boards on your schedule, filters opportunities against your criteria, drafts personalized proposals using context from each posting, and tracks your entire pipeline in a simple markdown file. It sends you only qualified leads, reminds you to follow up, and can even help generate invoices when you close deals.
+OpenClaw monitors job boards on your schedule, filters opportunities against your criteria, drafts personalized proposals using context from each posting, and tracks your entire pipeline in a simple markdown file. It sends you only qualified leads, reminds you to follow up, and can even help generate invoices when you close deals.
 
 **What you get:**
 - Morning digest of qualified leads matching your criteria
@@ -26,7 +26,7 @@ Clawdbot monitors job boards on your schedule, filters opportunities against you
 
 ### Step 1: Create Your Freelancer Profile (5 minutes)
 
-Create `~/clawd/freelance/PROFILE.md`:
+Create `~/openclaw/freelance/PROFILE.md`:
 
 ```markdown
 # Freelancer Profile
@@ -62,7 +62,7 @@ Create `~/clawd/freelance/PROFILE.md`:
 
 ### Step 2: Set Up Pipeline Tracking (3 minutes)
 
-Create `~/clawd/freelance/PIPELINE.md`:
+Create `~/openclaw/freelance/PIPELINE.md`:
 
 ```markdown
 # Lead Pipeline
@@ -87,7 +87,7 @@ Create `~/clawd/freelance/PIPELINE.md`:
 
 ### Step 3: Create Job Board URLs File (5 minutes)
 
-Create `~/clawd/freelance/JOB_SOURCES.md`:
+Create `~/openclaw/freelance/JOB_SOURCES.md`:
 
 ```markdown
 # Job Sources to Monitor
@@ -120,7 +120,7 @@ Create `~/clawd/freelance/JOB_SOURCES.md`:
 
 ### Step 4: Create Proposal Templates (5 minutes)
 
-Create `~/clawd/freelance/TEMPLATES.md`:
+Create `~/openclaw/freelance/TEMPLATES.md`:
 
 ```markdown
 # Proposal Templates
@@ -153,7 +153,7 @@ I can start [timeframe] and estimate [X weeks] for completion. Happy to jump on 
 
 ### Step 5: Add to HEARTBEAT.md (2 minutes)
 
-Add this section to your `~/clawd/HEARTBEAT.md`:
+Add this section to your `~/openclaw/HEARTBEAT.md`:
 
 ```markdown
 ## Freelance Pipeline Check
@@ -244,7 +244,7 @@ or generate a simple HTML invoice I can PDF.
 
 ## Cron Schedule
 
-Add these to your Clawdbot cron jobs:
+Add these to your OpenClaw cron jobs:
 
 ```bash
 # Morning lead scan - Monday to Friday at 8:00 AM
@@ -264,13 +264,13 @@ Add these to your Clawdbot cron jobs:
 
 ```bash
 # List current jobs
-clawdbot cron list
+openclaw cron list
 
 # Add morning scan
-clawdbot cron add "0 8 * * 1-5" "Scan freelance/JOB_SOURCES.md for leads posted in last 24h. Score against PROFILE.md. Add 7+ scored leads to PIPELINE.md Hot Leads section. Send me a summary of top 3 opportunities."
+openclaw cron add "0 8 * * 1-5" "Scan freelance/JOB_SOURCES.md for leads posted in last 24h. Score against PROFILE.md. Add 7+ scored leads to PIPELINE.md Hot Leads section. Send me a summary of top 3 opportunities."
 
 # Add follow-up reminder
-clawdbot cron add "0 17 * * 1-5" "Check freelance/PIPELINE.md Proposals Sent table. For any sent 3+ days ago with status 'waiting', draft a polite follow-up message. Notify me with the drafts."
+openclaw cron add "0 17 * * 1-5" "Check freelance/PIPELINE.md Proposals Sent table. For any sent 3+ days ago with status 'waiting', draft a polite follow-up message. Notify me with the drafts."
 ```
 
 ---
@@ -326,7 +326,7 @@ Track in `memory/freelance-state.json`:
 - **Consistent follow-up** without mental overhead
 
 ### Ongoing Benefits
-- **Never miss a hot lead** - Clawdbot scans while you sleep
+- **Never miss a hot lead** - OpenClaw scans while you sleep
 - **Faster proposal turnaround** - drafts ready when you wake up
 - **Data-driven decisions** - track what's working over time
 - **More time for actual work** - less time hunting for it
@@ -336,10 +336,10 @@ Track in `memory/freelance-state.json`:
 ## Pro Tips
 
 ### 1. Qualify Aggressively
-Tell Clawdbot your hard filters upfront. Better to miss a few edge cases than drown in noise.
+Tell OpenClaw your hard filters upfront. Better to miss a few edge cases than drown in noise.
 
 ### 2. Customize the Drafts
-Clawdbot's proposals are starting points. Always add 1-2 sentences that prove you actually read their posting.
+OpenClaw's proposals are starting points. Always add 1-2 sentences that prove you actually read their posting.
 
 ### 3. Track Your Wins
 When you land a client, note which source and what made your proposal stand out. Feed this back into your templates.

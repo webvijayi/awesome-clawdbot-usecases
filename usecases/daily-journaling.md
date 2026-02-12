@@ -12,7 +12,7 @@ Journaling is valuable but hard to maintain. Staring at a blank page is intimida
 
 ## The Solution
 
-Clawdbot prompts you with specific questions, captures quick responses throughout the day, and synthesizes patterns over time. Low friction, high insight.
+OpenClaw prompts you with specific questions, captures quick responses throughout the day, and synthesizes patterns over time. Low friction, high insight.
 
 ---
 
@@ -21,13 +21,13 @@ Clawdbot prompts you with specific questions, captures quick responses throughou
 ### Step 1: Install Journaling Skills
 
 ```bash
-clawdbot skill install obsidian-conversation-backup  # or notion, reflect
-clawdbot skill install todoist
+openclaw skill install obsidian-conversation-backup  # or notion, reflect
+openclaw skill install todoist
 ```
 
 ### Step 2: Create Journal Templates
 
-Create `~/clawd/journal/templates.md`:
+Create `~/openclaw/journal/templates.md`:
 
 ```markdown
 # Morning Questions (5 min)
@@ -55,7 +55,7 @@ Create `~/clawd/journal/templates.md`:
 
 ### Step 3: Configure Prompts
 
-Create `~/clawd/journal/config.json`:
+Create `~/openclaw/journal/config.json`:
 
 ```json
 {
@@ -63,7 +63,7 @@ Create `~/clawd/journal/config.json`:
   "eveningTime": "21:00",
   "weeklyDay": "Sunday",
   "monthlyDay": 1,
-  "storage": "~/clawd/journal/entries/",
+  "storage": "~/openclaw/journal/entries/",
   "format": "markdown"
 }
 ```

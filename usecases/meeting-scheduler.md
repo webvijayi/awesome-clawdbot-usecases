@@ -12,7 +12,7 @@ Scheduling meetings across timezones is a nightmare. You're juggling Calendly li
 
 ## The Solution
 
-Clawdbot handles the entire meeting lifecycle: finds times that work across timezones, checks everyone's availability, sends calendar invites with context, reminds participants before the meeting, and automatically captures and distributes follow-up action items.
+OpenClaw handles the entire meeting lifecycle: finds times that work across timezones, checks everyone's availability, sends calendar invites with context, reminds participants before the meeting, and automatically captures and distributes follow-up action items.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot handles the entire meeting lifecycle: finds times that work across time
 ### Step 1: Install Calendar Skills
 
 ```bash
-clawdbot skill install calendar       # Google Calendar integration
-clawdbot skill install ical           # iCal/Apple Calendar support
-clawdbot skill install remind-me      # Smart reminders
-clawdbot skill install gmail          # Email invites
+openclaw skill install calendar       # Google Calendar integration
+openclaw skill install ical           # iCal/Apple Calendar support
+openclaw skill install remind-me      # Smart reminders
+openclaw skill install gmail          # Email invites
 ```
 
 ### Step 2: Configure Timezone Preferences
 
-Create `~/clawd/meetings/config.json`:
+Create `~/openclaw/meetings/config.json`:
 
 ```json
 {
@@ -48,7 +48,7 @@ Create `~/clawd/meetings/config.json`:
 
 ### Step 3: Set Up Contact Timezones
 
-Create `~/clawd/meetings/contacts.json`:
+Create `~/openclaw/meetings/contacts.json`:
 
 ```json
 {
@@ -62,7 +62,7 @@ Create `~/clawd/meetings/contacts.json`:
 
 ### Step 4: Create Meeting Templates
 
-Create `~/clawd/meetings/templates.md`:
+Create `~/openclaw/meetings/templates.md`:
 
 ```markdown
 # Meeting Templates

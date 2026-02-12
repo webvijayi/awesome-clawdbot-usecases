@@ -12,7 +12,7 @@ Market research is expensive and time-consuming. By the time you've gathered dat
 
 ## The Solution
 
-Clawdbot continuously monitors your market: tracks competitors, identifies emerging trends, analyzes customer sentiment, and generates actionable intelligence reports on demand.
+OpenClaw continuously monitors your market: tracks competitors, identifies emerging trends, analyzes customer sentiment, and generates actionable intelligence reports on demand.
 
 ---
 
@@ -21,17 +21,17 @@ Clawdbot continuously monitors your market: tracks competitors, identifies emerg
 ### Step 1: Install Market Research Skills
 
 ```bash
-clawdbot skill install brave-search
-clawdbot skill install reddit
-clawdbot skill install twitter-api
-clawdbot skill install crunchbase
-clawdbot skill install hn-digest
-clawdbot skill install miniflux
+openclaw skill install brave-search
+openclaw skill install reddit
+openclaw skill install twitter-api
+openclaw skill install crunchbase
+openclaw skill install hn-digest
+openclaw skill install miniflux
 ```
 
 ### Step 2: Define Your Market
 
-Create `~/clawd/market-research/market.md`:
+Create `~/openclaw/market-research/market.md`:
 
 ```markdown
 # Market Definition
@@ -54,7 +54,7 @@ Create `~/clawd/market-research/market.md`:
 
 ### Step 3: Track Competitors
 
-Create `~/clawd/market-research/competitors.json`:
+Create `~/openclaw/market-research/competitors.json`:
 
 ```json
 {
@@ -87,7 +87,7 @@ Create `~/clawd/market-research/competitors.json`:
 
 ### Step 4: Set Up Trend Tracking
 
-Create `~/clawd/market-research/trends.md`:
+Create `~/openclaw/market-research/trends.md`:
 
 ```markdown
 # Trend Tracking

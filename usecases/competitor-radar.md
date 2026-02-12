@@ -8,7 +8,7 @@ You're building a product but have no idea what competitors are doing until cust
 
 ## The Solution
 
-Clawdbot becomes your always-on competitive intelligence analyst. It monitors competitor websites for pricing changes, scans their blogs for product announcements, tracks their social media activity, and delivers a weekly digest with strategic recommendations. When something big happens (major price drop, new feature launch), you get an instant alert.
+OpenClaw becomes your always-on competitive intelligence analyst. It monitors competitor websites for pricing changes, scans their blogs for product announcements, tracks their social media activity, and delivers a weekly digest with strategic recommendations. When something big happens (major price drop, new feature launch), you get an instant alert.
 
 ---
 
@@ -16,14 +16,14 @@ Clawdbot becomes your always-on competitive intelligence analyst. It monitors co
 
 ### Step 1: Create Your Competitor Config File
 
-Create `competitors.json` in your Clawdbot workspace:
+Create `competitors.json` in your OpenClaw workspace:
 
 ```bash
-mkdir -p ~/clawd/competitor-radar
+mkdir -p ~/openclaw/competitor-radar
 ```
 
 ```json
-// ~/clawd/competitor-radar/competitors.json
+// ~/openclaw/competitor-radar/competitors.json
 {
   "competitors": [
     {
@@ -58,9 +58,9 @@ mkdir -p ~/clawd/competitor-radar
 
 ```bash
 # Initialize tracking files
-touch ~/clawd/competitor-radar/pricing-history.md
-touch ~/clawd/competitor-radar/feature-log.md
-touch ~/clawd/competitor-radar/weekly-digest.md
+touch ~/openclaw/competitor-radar/pricing-history.md
+touch ~/openclaw/competitor-radar/feature-log.md
+touch ~/openclaw/competitor-radar/weekly-digest.md
 ```
 
 ### Step 3: Set Up the Cron Jobs
@@ -69,19 +69,19 @@ Run these commands to schedule your competitor monitoring:
 
 ```bash
 # Weekly comprehensive scan (Sunday 8 PM)
-clawdbot cron add "0 20 * * 0" "Run the weekly competitor radar scan. Check all competitors in ~/clawd/competitor-radar/competitors.json. For each: fetch pricing page (compare to pricing-history.md), scan blog for new posts, search for recent news. Generate weekly-digest.md with findings and strategic recommendations. Alert me immediately if any competitor dropped prices >15% or announced a major feature."
+openclaw cron add "0 20 * * 0" "Run the weekly competitor radar scan. Check all competitors in ~/openclaw/competitor-radar/competitors.json. For each: fetch pricing page (compare to pricing-history.md), scan blog for new posts, search for recent news. Generate weekly-digest.md with findings and strategic recommendations. Alert me immediately if any competitor dropped prices >15% or announced a major feature."
 
 # Daily quick scan for urgent changes (8 AM)
-clawdbot cron add "0 8 * * 1-5" "Quick competitor check: Fetch pricing pages for all competitors in competitors.json. Compare to last known prices in pricing-history.md. If ANY price changed, alert me immediately with details. Update pricing-history.md."
+openclaw cron add "0 8 * * 1-5" "Quick competitor check: Fetch pricing pages for all competitors in competitors.json. Compare to last known prices in pricing-history.md. If ANY price changed, alert me immediately with details. Update pricing-history.md."
 
 # Mid-week blog/news scan (Wednesday 2 PM)
-clawdbot cron add "0 14 * * 3" "Scan competitor blogs and search for recent news about competitors listed in competitors.json. Log any new posts to feature-log.md. If anything matches alert_keywords, notify me."
+openclaw cron add "0 14 * * 3" "Scan competitor blogs and search for recent news about competitors listed in competitors.json. Log any new posts to feature-log.md. If anything matches alert_keywords, notify me."
 ```
 
 ### Step 4: Verify Setup
 
 ```bash
-clawdbot cron list
+openclaw cron list
 ```
 
 ---
@@ -102,7 +102,7 @@ clawdbot cron list
 
 ### 1️⃣ Initial Setup Scan
 ```
-Read ~/clawd/competitor-radar/competitors.json. For each competitor, fetch their pricing page and extract all plan names, prices, and key features. Save this as the baseline in pricing-history.md with today's date. Format as a comparison table.
+Read ~/openclaw/competitor-radar/competitors.json. For each competitor, fetch their pricing page and extract all plan names, prices, and key features. Save this as the baseline in pricing-history.md with today's date. Format as a comparison table.
 ```
 
 ### 2️⃣ Deep Dive on Specific Competitor
@@ -263,9 +263,9 @@ Acme's aggressive pricing needs monitoring. No existential threats.
 
 3. **Archive your digests**: Move old `weekly-digest.md` to `digests/YYYY-MM-DD.md` monthly for trend analysis.
 
-4. **Combine with customer intel**: Ask Clawdbot to correlate competitor moves with any customer feedback you've logged.
+4. **Combine with customer intel**: Ask OpenClaw to correlate competitor moves with any customer feedback you've logged.
 
-5. **Share with your team**: Have Clawdbot post the weekly digest to a #competitive-intel Slack/Discord channel.
+5. **Share with your team**: Have OpenClaw post the weekly digest to a #competitive-intel Slack/Discord channel.
 
 ---
 
@@ -274,7 +274,7 @@ Acme's aggressive pricing needs monitoring. No existential threats.
 Copy-paste this to get started in under 5 minutes:
 
 ```
-Create ~/clawd/competitor-radar/ with competitors.json containing:
+Create ~/openclaw/competitor-radar/ with competitors.json containing:
 - Competitor 1: [NAME], pricing at [URL], blog at [URL]  
 - Competitor 2: [NAME], pricing at [URL], blog at [URL]
 

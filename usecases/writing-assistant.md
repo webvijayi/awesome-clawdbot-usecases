@@ -12,7 +12,7 @@ Writing quality blog content is exhausting: research, drafting, editing, SEO opt
 
 ## The Solution
 
-Clawdbot becomes your writing partner: helps research topics, generates first drafts, edits for clarity and style, optimizes for SEO, and handles the publishing workflow. You provide the ideas and voice; Clawdbot handles the heavy lifting.
+OpenClaw becomes your writing partner: helps research topics, generates first drafts, edits for clarity and style, optimizes for SEO, and handles the publishing workflow. You provide the ideas and voice; OpenClaw handles the heavy lifting.
 
 ---
 
@@ -21,19 +21,19 @@ Clawdbot becomes your writing partner: helps research topics, generates first dr
 ### Step 1: Install Writing Skills
 
 ```bash
-clawdbot skill install gsc           # Google Search Console
-clawdbot skill install brave-search  # Research & SERP analysis
-clawdbot skill install web-fetch     # Reference gathering
-clawdbot skill install ghost         # Blog publishing (if using Ghost)
+openclaw skill install gsc           # Google Search Console
+openclaw skill install brave-search  # Research & SERP analysis
+openclaw skill install web-fetch     # Reference gathering
+openclaw skill install ghost         # Blog publishing (if using Ghost)
 ```
 
 ### Step 2: Create Writing Workspace
 
 ```bash
-mkdir -p ~/clawd/writing/{drafts,published,research}
+mkdir -p ~/openclaw/writing/{drafts,published,research}
 ```
 
-Create `~/clawd/writing/style-guide.md`:
+Create `~/openclaw/writing/style-guide.md`:
 
 ```markdown
 # My Writing Style Guide
@@ -61,7 +61,7 @@ Create `~/clawd/writing/style-guide.md`:
 
 ### Step 3: Set Up Blog Config
 
-Create `~/clawd/writing/blog-config.json`:
+Create `~/openclaw/writing/blog-config.json`:
 
 ```json
 {
@@ -98,7 +98,7 @@ I want to write about [topic]. Research the top 10 ranking articles, identify ga
 
 **Draft generation:**
 ```
-Create a first draft for a blog post about [topic]. Target keyword: [keyword]. Follow my style guide in ~/clawd/writing/style-guide.md. Aim for 1800 words.
+Create a first draft for a blog post about [topic]. Target keyword: [keyword]. Follow my style guide in ~/openclaw/writing/style-guide.md. Aim for 1800 words.
 ```
 
 **Editing pass:**
@@ -121,9 +121,9 @@ This post is ready. Format it for Ghost, generate a featured image prompt, creat
 ## Workflow Stages
 
 ```
-1. RESEARCH    → Clawdbot gathers data, finds angles
+1. RESEARCH    → OpenClaw gathers data, finds angles
 2. OUTLINE     → You approve structure
-3. DRAFT       → Clawdbot writes first draft
+3. DRAFT       → OpenClaw writes first draft
 4. EDIT        → Multiple passes for clarity
 5. SEO         → Keyword optimization
 6. PUBLISH     → Format, schedule, promote

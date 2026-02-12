@@ -12,7 +12,7 @@ Manual deployments are error-prone and stressful. You forget steps, environments
 
 ## The Solution
 
-Clawdbot orchestrates deployments: runs pipelines, monitors progress, handles rollbacks, and notifies the right people. You push code, it handles the rest.
+OpenClaw orchestrates deployments: runs pipelines, monitors progress, handles rollbacks, and notifies the right people. You push code, it handles the rest.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot orchestrates deployments: runs pipelines, monitors progress, handles ro
 ### Step 1: Install DevOps Skills
 
 ```bash
-clawdbot skill install github
-clawdbot skill install vercel-deploy
-clawdbot skill install dokploy
-clawdbot skill install cloudflare
+openclaw skill install github
+openclaw skill install vercel-deploy
+openclaw skill install dokploy
+openclaw skill install cloudflare
 ```
 
 ### Step 2: Configure Environments
 
-Create `~/clawd/deploy/config.json`:
+Create `~/openclaw/deploy/config.json`:
 
 ```json
 {

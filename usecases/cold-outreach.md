@@ -12,7 +12,7 @@ Cold outreach works when it's personal. But personalization doesn't scale—rese
 
 ## The Solution
 
-Clawdbot researches prospects automatically, finds personalization hooks, generates custom messages, and manages follow-up sequences. You review and send—personal touch at scale.
+OpenClaw researches prospects automatically, finds personalization hooks, generates custom messages, and manages follow-up sequences. You review and send—personal touch at scale.
 
 ---
 
@@ -21,15 +21,15 @@ Clawdbot researches prospects automatically, finds personalization hooks, genera
 ### Step 1: Install Outreach Skills
 
 ```bash
-clawdbot skill install apollo
-clawdbot skill install linkedin
-clawdbot skill install gmail
-clawdbot skill install web-fetch
+openclaw skill install apollo
+openclaw skill install linkedin
+openclaw skill install gmail
+openclaw skill install web-fetch
 ```
 
 ### Step 2: Define Ideal Customer Profile
 
-Create `~/clawd/outreach/icp.md`:
+Create `~/openclaw/outreach/icp.md`:
 
 ```markdown
 # Ideal Customer Profile
@@ -53,7 +53,7 @@ Create `~/clawd/outreach/icp.md`:
 
 ### Step 3: Create Message Templates
 
-Create `~/clawd/outreach/templates.md`:
+Create `~/openclaw/outreach/templates.md`:
 
 ```markdown
 # Outreach Templates

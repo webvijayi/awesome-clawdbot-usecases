@@ -8,7 +8,7 @@ Most professionals spend 23+ hours per week in meetings, yet walk in unpreparedâ
 
 ## The Solution
 
-Clawdbot transforms your meeting workflow into a high-ROI system:
+OpenClaw transforms your meeting workflow into a high-ROI system:
 
 - **Before meetings**: Automatically researches attendees (LinkedIn, company news, past email threads), generates contextual agendas, and briefs you with everything you need to know
 - **After meetings**: Transcribes notes into action items, drafts personalized follow-up emails, and tracks which meetings actually led to outcomes
@@ -22,22 +22,22 @@ Works with **Google Calendar** (via gcal skill) or **Apple Calendar** (via ical 
 
 ```bash
 # Check available skills
-clawdbot skills list
+openclaw skills list
 
 # Enable calendar integration (choose one)
-clawdbot skills enable gcal      # For Google Calendar
-clawdbot skills enable ical      # For Apple Calendar
+openclaw skills enable gcal      # For Google Calendar
+openclaw skills enable ical      # For Apple Calendar
 
 # Enable email for follow-ups
-clawdbot skills enable gmail     # or your email provider
+openclaw skills enable gmail     # or your email provider
 
 # Enable web search for research
-clawdbot skills enable brave     # Web search for company news
+openclaw skills enable brave     # Web search for company news
 ```
 
 ### Step 2: Create Meeting Intelligence Directory
 
-Ask Clawdbot:
+Ask OpenClaw:
 ```
 Create a meeting intelligence system with this structure:
 - meetings/briefs/ (pre-meeting research)
@@ -57,7 +57,7 @@ Create the automated schedules (see Cron Schedule section below).
 
 ### Step 5: Create Meeting Brief Template
 
-Ask Clawdbot:
+Ask OpenClaw:
 ```
 Create a meeting brief template at meetings/BRIEF_TEMPLATE.md with sections for:
 - Meeting basics (title, time, attendees)
@@ -153,7 +153,7 @@ are due soon and haven't been completed.
 
 ## Cron Schedule
 
-Add these to your Clawdbot cron configuration:
+Add these to your OpenClaw cron configuration:
 
 ```bash
 # Morning meeting prep - runs at 7:00 AM on weekdays
@@ -262,7 +262,7 @@ Notify me if:
 
 | Issue | Solution |
 |-------|----------|
-| Calendar not syncing | Check `clawdbot skills test gcal` or `ical` |
+| Calendar not syncing | Check `openclaw skills test gcal` or `ical` |
 | LinkedIn blocked | Use browser skill with rate limiting, or manual lookup |
 | Email search slow | Narrow date ranges, use specific search terms |
 | Too many briefs | Add filters: skip <15 min meetings, internal-only, recurring |

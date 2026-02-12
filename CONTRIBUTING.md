@@ -27,7 +27,7 @@ Use this structure:
 
 ## The Solution
 
-How Clawdbot solves it. Focus on the workflow, not the tech.
+How OpenClaw solves it. Focus on the workflow, not the tech.
 
 ## Setup Guide
 
@@ -39,7 +39,7 @@ Step-by-step instructions. A non-technical person should be able to follow.
 
 ## Skills Needed
 
-List any Clawdbot skills required:
+List any OpenClaw skills required:
 - `skill-name` - what it does
 
 ## Example Prompts

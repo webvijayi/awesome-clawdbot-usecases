@@ -12,7 +12,7 @@ Technology moves fast. New frameworks weekly, security vulnerabilities daily, pa
 
 ## The Solution
 
-Clawdbot maintains your personal tech radar: tracks technologies you use, monitors for security issues, evaluates new tools against your stack, and alerts you only when something genuinely matters.
+OpenClaw maintains your personal tech radar: tracks technologies you use, monitors for security issues, evaluates new tools against your stack, and alerts you only when something genuinely matters.
 
 ---
 
@@ -21,17 +21,17 @@ Clawdbot maintains your personal tech radar: tracks technologies you use, monito
 ### Step 1: Install Monitoring Skills
 
 ```bash
-clawdbot skill install github
-clawdbot skill install hn-digest
-clawdbot skill install cve-search
-clawdbot skill install brave-search
-clawdbot skill install context7
-clawdbot skill install miniflux
+openclaw skill install github
+openclaw skill install hn-digest
+openclaw skill install cve-search
+openclaw skill install brave-search
+openclaw skill install context7
+openclaw skill install miniflux
 ```
 
 ### Step 2: Define Your Stack
 
-Create `~/clawd/tech-radar/stack.json`:
+Create `~/openclaw/tech-radar/stack.json`:
 
 ```json
 {
@@ -51,7 +51,7 @@ Create `~/clawd/tech-radar/stack.json`:
 
 ### Step 3: Configure Watch Lists
 
-Create `~/clawd/tech-radar/watchlist.md`:
+Create `~/openclaw/tech-radar/watchlist.md`:
 
 ```markdown
 # Tech Watch List
@@ -78,7 +78,7 @@ Create `~/clawd/tech-radar/watchlist.md`:
 
 ### Step 4: Set Security Priorities
 
-Create `~/clawd/tech-radar/security.md`:
+Create `~/openclaw/tech-radar/security.md`:
 
 ```markdown
 # Security Monitoring

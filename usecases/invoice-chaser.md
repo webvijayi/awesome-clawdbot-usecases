@@ -8,7 +8,7 @@ Chasing unpaid invoices is awkward, time-consuming, and easy to forget—leading
 
 ## The Solution
 
-Clawdbot becomes your accounts receivable assistant. It tracks invoices from email confirmations, manual input, or CSV imports, then automatically sends polite reminder emails at customizable intervals (7, 14, 30 days overdue). It learns which clients pay slow vs. fast, warns you about potential cash flow gaps, and keeps a running ledger you can query anytime with natural language ("Who owes me money?" / "What's my expected income this month?").
+OpenClaw becomes your accounts receivable assistant. It tracks invoices from email confirmations, manual input, or CSV imports, then automatically sends polite reminder emails at customizable intervals (7, 14, 30 days overdue). It learns which clients pay slow vs. fast, warns you about potential cash flow gaps, and keeps a running ledger you can query anytime with natural language ("Who owes me money?" / "What's my expected income this month?").
 
 ---
 
@@ -16,11 +16,11 @@ Clawdbot becomes your accounts receivable assistant. It tracks invoices from ema
 
 ### Step 1: Create Your Invoice Tracker File
 
-Create `invoices.json` in your Clawdbot workspace:
+Create `invoices.json` in your OpenClaw workspace:
 
 ```bash
-mkdir -p ~/clawd/data
-cat > ~/clawd/data/invoices.json << 'EOF'
+mkdir -p ~/openclaw/data
+cat > ~/openclaw/data/invoices.json << 'EOF'
 {
   "invoices": [],
   "clients": {},
@@ -37,7 +37,7 @@ EOF
 
 ### Step 2: Create the Invoice Template
 
-Create `~/clawd/templates/invoice-reminder.md`:
+Create `~/openclaw/templates/invoice-reminder.md`:
 
 ```markdown
 Subject: Friendly Reminder: Invoice #{{invoice_id}} - {{days_overdue}} days overdue
@@ -63,16 +63,16 @@ Best regards,
 
 ### Step 3: Set Up Email Access
 
-Ensure Clawdbot has email skills configured. Add to your `skills/` directory or verify existing email integration works:
+Ensure OpenClaw has email skills configured. Add to your `skills/` directory or verify existing email integration works:
 
 ```bash
 # Test email access
-clawdbot run "Check my inbox for any emails containing 'invoice' or 'payment'"
+openclaw run "Check my inbox for any emails containing 'invoice' or 'payment'"
 ```
 
 ### Step 4: Add Your First Invoice
 
-Simply tell Clawdbot:
+Simply tell OpenClaw:
 
 ```
 Add invoice: Client "Acme Corp", $2,500 for "Website Redesign", 
@@ -101,7 +101,7 @@ Show me all outstanding invoices
 
 ### Minimal Setup (No Extra Skills)
 
-Even without email skills, you can use Clawdbot to:
+Even without email skills, you can use OpenClaw to:
 - Track invoices manually
 - Get reminded via Telegram/Discord when invoices are overdue
 - Generate reminder text you copy-paste into your email client
@@ -186,7 +186,7 @@ for invoice #TS-2024-003
 
 ## Cron Schedule
 
-Add these to your Clawdbot cron configuration:
+Add these to your OpenClaw cron configuration:
 
 ### Daily Invoice Check (9 AM)
 
@@ -346,11 +346,11 @@ Here's what your `invoices.json` looks like after a few months:
 
 2. **Customize reminder tone**: Edit the template for each interval—day 7 is friendly, day 30 is firmer.
 
-3. **Integration opportunity**: If you use FreshBooks/QuickBooks/Xero, ask Clawdbot to parse their notification emails automatically.
+3. **Integration opportunity**: If you use FreshBooks/QuickBooks/Xero, ask OpenClaw to parse their notification emails automatically.
 
-4. **The nuclear option**: For 60+ day invoices, have Clawdbot draft a "final notice before collections" email for your review.
+4. **The nuclear option**: For 60+ day invoices, have OpenClaw draft a "final notice before collections" email for your review.
 
-5. **Celebrate payments**: Configure Clawdbot to send you a 🎉 reaction when a payment is detected. Small wins matter.
+5. **Celebrate payments**: Configure OpenClaw to send you a 🎉 reaction when a payment is detected. Small wins matter.
 
 ---
 

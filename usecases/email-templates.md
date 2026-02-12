@@ -12,7 +12,7 @@ You write the same types of emails over and over: follow-ups, introductions, sta
 
 ## The Solution
 
-Clawdbot maintains your email templates, adapts them to context, matches tone to recipient and situation, and suggests responses based on conversation history. Tell it what you need to say—it handles how to say it professionally.
+OpenClaw maintains your email templates, adapts them to context, matches tone to recipient and situation, and suggests responses based on conversation history. Tell it what you need to say—it handles how to say it professionally.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot maintains your email templates, adapts them to context, matches tone to
 ### Step 1: Install Email Skills
 
 ```bash
-clawdbot skill install gmail          # Gmail integration
-clawdbot skill install imap           # Generic email support
-clawdbot skill install prompt-library # Template management
+openclaw skill install gmail          # Gmail integration
+openclaw skill install imap           # Generic email support
+openclaw skill install prompt-library # Template management
 ```
 
 ### Step 2: Define Your Voice
 
-Create `~/clawd/email/voice.md`:
+Create `~/openclaw/email/voice.md`:
 
 ```markdown
 # My Email Voice
@@ -52,7 +52,7 @@ Create `~/clawd/email/voice.md`:
 
 ### Step 3: Create Template Library
 
-Create `~/clawd/email/templates/`:
+Create `~/openclaw/email/templates/`:
 
 ```markdown
 # follow-up.md
@@ -75,7 +75,7 @@ Include: Acknowledge mistake, explain (briefly), remediation, prevent future
 
 ### Step 4: Set Up Response Suggestions
 
-Create `~/clawd/email/rules.md`:
+Create `~/openclaw/email/rules.md`:
 
 ```markdown
 # Response Rules

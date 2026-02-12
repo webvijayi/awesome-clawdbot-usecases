@@ -12,7 +12,7 @@ You want to buy something but it's too expensive. You check periodically, forget
 
 ## The Solution
 
-Clawdbot monitors products across multiple retailers, tracks price history, predicts good buying times, and alerts you only when prices hit YOUR target or drop significantly.
+OpenClaw monitors products across multiple retailers, tracks price history, predicts good buying times, and alerts you only when prices hit YOUR target or drop significantly.
 
 ---
 
@@ -21,14 +21,14 @@ Clawdbot monitors products across multiple retailers, tracks price history, pred
 ### Step 1: Install Shopping Skills
 
 ```bash
-clawdbot skill install camelcamelcamel-alerts  # Amazon price tracking
-clawdbot skill install marktplaats  # Dutch marketplace
-clawdbot skill install whcli  # Austrian Willhaben
+openclaw skill install camelcamelcamel-alerts  # Amazon price tracking
+openclaw skill install marktplaats  # Dutch marketplace
+openclaw skill install whcli  # Austrian Willhaben
 ```
 
 ### Step 2: Create Watchlist
 
-Create `~/clawd/shopping/watchlist.json`:
+Create `~/openclaw/shopping/watchlist.json`:
 
 ```json
 {
@@ -56,7 +56,7 @@ Create `~/clawd/shopping/watchlist.json`:
 
 ### Step 3: Set Alert Preferences
 
-Create `~/clawd/shopping/preferences.md`:
+Create `~/openclaw/shopping/preferences.md`:
 
 ```markdown
 # Alert Preferences
