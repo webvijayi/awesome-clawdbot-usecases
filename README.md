@@ -1,9 +1,24 @@
 # Awesome OpenClaw Use Cases
 
-> **42 practical use cases** that actually make money or save 1+ hour daily. No hype, just results.
+> **42 practical use cases** for [OpenClaw](https://github.com/openclaw/openclaw) (formerly Clawdbot/Moltbot) that actually make money or save 1+ hour daily. No hype, just results.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![Use Cases](https://img.shields.io/badge/usecases-42-blue?style=flat-square)
+
+## About OpenClaw
+
+**OpenClaw** is the open-source autonomous AI agent created by [Peter Steinberger](https://github.com/steipete). It connects Claude, GPT, and other LLMs to your tools—email, calendar, smart home, dev workflows, and more.
+
+### Name History
+| Name | Period | Note |
+|------|--------|------|
+| **Clawdbot** | Late 2025 | Original name, lobster-themed, went viral on GitHub |
+| **Moltbot** | Jan 27, 2026 | Renamed after Anthropic C&D (lobsters molt as they grow 🦞) |
+| **OpenClaw** | Jan 30, 2026 | Current permanent name for better branding |
+
+*Searching for Clawdbot tutorials? Moltbot setup guide? OpenClaw examples? You're in the right place.*
+
+---
 
 ## Philosophy
 
@@ -121,3 +136,7 @@ Found a use case that makes you money or saves serious time? [Open a PR](CONTRIB
 ---
 
 *Built by people who use OpenClaw daily, for people who want results.*
+
+---
+
+<sub>**Keywords:** OpenClaw, Clawdbot, Moltbot, autonomous AI agent, AI automation, Claude agent, GPT agent, personal AI assistant, AI workflows, Peter Steinberger, open source AI, self-hosted AI agent</sub>
