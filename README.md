@@ -111,8 +111,7 @@ Each use case includes:
 
 ## Requirements
 
-- [OpenClaw/OpenClaw](https://github.com/openclaw/openclaw) installed
-- Relevant skills from [awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills)
+- [OpenClaw](https://github.com/openclaw/openclaw) installed
 - 10-30 minutes to set up each workflow
 
 ## Contributing
