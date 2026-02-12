@@ -1,9 +1,9 @@
 # Awesome Clawdbot Use Cases
 
-> **30 practical use cases** that actually make money or save 1+ hour daily. No hype, just results.
+> **42 practical use cases** that actually make money or save 1+ hour daily. No hype, just results.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Use Cases](https://img.shields.io/badge/usecases-30-blue?style=flat-square)
+![Use Cases](https://img.shields.io/badge/usecases-42-blue?style=flat-square)
 
 ## Philosophy
 
@@ -11,8 +11,6 @@ Every use case here passes a simple test:
 - ✅ Would a busy person actually set this up?
 - ✅ Would they use it daily (not just once)?
 - ✅ Does it directly make money OR save 1+ hour/day?
-
-No "cool demos" that collect dust. These are workflows that **pay for themselves**.
 
 ---
 
@@ -29,6 +27,7 @@ No "cool demos" that collect dust. These are workflows that **pay for themselves
 | [SEO Content Pipeline](usecases/seo-content-pipeline.md) | Marketing | 20 min | Rank higher, faster |
 | [Social Media Scheduler](usecases/social-media-scheduler.md) | Marketing | 15 min | Consistent posting |
 | [Stock Portfolio Tracker](usecases/stock-portfolio-tracker.md) | Finance | 15 min | Informed investing |
+| [Market Research](usecases/market-research.md) | Research | 20 min | Industry intelligence |
 
 ## ⏰ Time Savers
 
@@ -37,17 +36,20 @@ No "cool demos" that collect dust. These are workflows that **pay for themselves
 | [Email Triage Autopilot](usecases/email-triage.md) | Productivity | 10 min | 1-2 hours/day |
 | [Meeting ROI Maximizer](usecases/meeting-roi.md) | Productivity | 15 min | 30-60 min/day |
 | [Client Memory Hub](usecases/client-memory.md) | CRM | 20 min | Never forget context |
-| [News Digest](usecases/news-digest.md) | Research | 10 min | Stay informed, not overwhelmed |
+| [News Digest](usecases/news-digest.md) | Research | 10 min | Stay informed |
 | [PR Review Assistant](usecases/pr-review-assistant.md) | DevOps | 15 min | Faster code reviews |
 | [Voice Note Organizer](usecases/voice-note-organizer.md) | Productivity | 10 min | Ideas never lost |
 | [Document Processor](usecases/document-processor.md) | Productivity | 15 min | Searchable documents |
+| [Meeting Scheduler](usecases/meeting-scheduler.md) | Productivity | 10 min | No more back-and-forth |
+| [Email Templates](usecases/email-templates.md) | Productivity | 10 min | Faster responses |
+| [Team Standup Bot](usecases/team-standup-bot.md) | Team | 15 min | Async standups |
 
 ## 🏠 Life Automation
 
 | Use Case | Category | Time to Setup | Benefit |
 |----------|----------|---------------|---------|
 | [Home Automation](usecases/home-automation.md) | Smart Home | 20 min | Intelligent home |
-| [Travel Planner](usecases/travel-planner.md) | Travel | 15 min | Trips planned in minutes |
+| [Travel Planner](usecases/travel-planner.md) | Travel | 15 min | Trips in minutes |
 | [Price Drop Alerter](usecases/price-drop-alerter.md) | Shopping | 10 min | Never overpay |
 | [Grocery Optimizer](usecases/grocery-optimizer.md) | Shopping | 15 min | Meal plan + shop smart |
 | [Expense Tracker](usecases/expense-tracker.md) | Finance | 15 min | Know where money goes |
@@ -58,8 +60,16 @@ No "cool demos" that collect dust. These are workflows that **pay for themselves
 |----------|----------|---------------|---------|
 | [Habit Tracker](usecases/habit-tracker.md) | Personal Dev | 10 min | Build habits that stick |
 | [Daily Journaling](usecases/daily-journaling.md) | Personal Dev | 10 min | Reflection made easy |
-| [Learning Path Creator](usecases/learning-path-creator.md) | Education | 15 min | Learn anything systematically |
-| [Workout Accountability](usecases/workout-accountability.md) | Health | 10 min | Never skip gym again |
+| [Learning Path Creator](usecases/learning-path-creator.md) | Education | 15 min | Learn systematically |
+| [Workout Accountability](usecases/workout-accountability.md) | Health | 10 min | Never skip gym |
+
+## 💚 Health & Wellness
+
+| Use Case | Category | Time to Setup | Benefit |
+|----------|----------|---------------|---------|
+| [Sleep Optimizer](usecases/sleep-optimizer.md) | Health | 15 min | Better sleep quality |
+| [Mental Health Check-in](usecases/mental-health-checkin.md) | Health | 10 min | Mood tracking + patterns |
+| [Nutrition Tracker](usecases/nutrition-tracker.md) | Health | 15 min | Track macros easily |
 
 ## 🛠️ Developer Tools
 
@@ -69,16 +79,26 @@ No "cool demos" that collect dust. These are workflows that **pay for themselves
 | [Deployment Pipeline](usecases/deployment-pipeline.md) | DevOps | 20 min | Ship with confidence |
 | [Changelog Generator](usecases/changelog-generator.md) | DevOps | 10 min | Release notes in seconds |
 | [AI Cost Tracker](usecases/ai-cost-tracker.md) | DevOps | 10 min | Control API spending |
+| [Tech Radar](usecases/tech-radar.md) | DevOps | 15 min | Track emerging tech |
 
-## 🎙️ Content Creation
+## 🎨 Creative & Content
 
 | Use Case | Category | Time to Setup | Benefit |
 |----------|----------|---------------|---------|
-| [Podcast Production](usecases/podcast-production.md) | Media | 20 min | 80% less admin work |
+| [Podcast Production](usecases/podcast-production.md) | Media | 20 min | 80% less admin |
+| [Writing Assistant](usecases/writing-assistant.md) | Content | 15 min | Faster drafts |
+| [Design Feedback](usecases/design-feedback.md) | Design | 15 min | UI/UX reviews |
+| [Video Content Pipeline](usecases/video-content-pipeline.md) | Media | 20 min | YouTube optimization |
+
+## 📚 Research & Learning
+
+| Use Case | Category | Time to Setup | Benefit |
+|----------|----------|---------------|---------|
+| [Academic Research](usecases/academic-research.md) | Research | 20 min | Literature + citations |
 
 ---
 
-## How to Use These
+## How to Use
 
 Each use case includes:
 1. **The Problem** - Why this matters
@@ -98,8 +118,6 @@ Each use case includes:
 ## Contributing
 
 Found a use case that makes you money or saves serious time? [Open a PR](CONTRIBUTING.md)!
-
-The bar is high: it must pass the busy-person test.
 
 ---
 
